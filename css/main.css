@@ -34,6 +34,17 @@
 
 
 
+/* ====== Selection ====== */
+/* ====== Selection ====== */
+
+::selection{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+
+
+
 /* ====== Components ====== */
 /* ====== Components ====== */
 
