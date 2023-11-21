@@ -1,0 +1,198 @@
+.whole__navbar {
+
+    /* Layout */
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 6vw;
+
+    /* Style */
+
+    background-color: var(--white-color);
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+
+    .top__bar {
+
+        /* Layout */
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 14px 20px;
+
+        /* Style */
+
+        background: var(--primary-color);
+        border-radius: 0 0 4px 4px;
+
+        .personal__details .text,
+        .personal__details {
+            display: flex;
+            align-items: center;
+        }
+
+        .personal__details .text {
+
+            /* Layout */
+
+            gap: 10px;
+
+            padding: 0 20px 0 0;
+
+            /* Style */
+
+            color: var(--white-color);
+
+            font-size: 14px;
+
+            >i {
+                font-size: 20px;
+            }
+        }
+
+        .personal__details .text:last-child {
+
+            /* Layout */
+
+            padding: 0 0 0 20px;
+
+            /* Style */
+
+            border-left: 1px solid var(--white-color);
+        }
+
+        .social__links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .social__icon {
+                color: var(--white-color);
+                font-size: 20px;
+            }
+        }
+
+    }
+
+    .nav__bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 16px 0;
+        
+        z-index: 99;
+
+        position: sticky;
+        top: 0;
+        
+        .logo img {
+            width: 170px;
+        }
+
+        .nav__links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .link {
+
+                color: var(--dark-color);
+
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: 700;
+                letter-spacing: 0.6px;
+                text-transform: uppercase;
+
+                transition: .3s;
+            }
+
+            .link.active,
+            .link:hover {
+                color: var(--primary-color);
+            }
+        }
+
+        .btns {
+            display: flex;
+            gap: 30px;
+
+            .sec__btn {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                >i {
+
+                    /* Layout */
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    width: 50px;
+                    height: 50px;
+
+                    /* Style */
+
+                    font-size: 24px;
+                    color: var(--white-color);
+
+                    border-radius: 50%;
+                    background: var(--primary-color);
+                }
+
+                .btn__context {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .text {
+                        color: var(--primary-color);
+                        font-weight: 600;
+                        line-height: 14px;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                    }
+
+                    .number {
+                        color: var(--dark-color);
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 18px;
+                    }
+                }
+            }
+
+            .btn {
+
+                /* Layout */
+
+                padding: 20px 25px;
+
+                /* Style */
+
+                background: var(--dark-color);
+                color: var(--white-color);
+                border-radius: 5px;
+                text-transform: uppercase;
+                font-size: 15px;
+                line-height: 15px;
+                font-weight: 600;
+                letter-spacing: 0.6px;
+
+                transition: .3s;
+            }
+
+            .btn:hover {
+                background: var(--primary-color);
+            }
+        }
+
+    }
+
+}
