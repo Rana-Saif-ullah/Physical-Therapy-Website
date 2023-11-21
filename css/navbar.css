@@ -299,6 +299,15 @@
         .top__bar {
             display: none;
         }
+
+        .nav__bar{
+            .btns{
+                .sec__btn,
+                .btn{
+                    display: none;
+                }
+            }
+        }
     }
 }
 
@@ -306,8 +315,8 @@
 @media (max-width: 648px) {
     .whole__navbar {
         .nav__bar {
-            .btns {
-                display: none;
+            .logo img{
+                width: 260px;
             }
         }
     }
