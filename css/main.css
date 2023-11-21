@@ -26,7 +26,7 @@
 /* ====== Variables ====== */
 
 :root {
-    --primary-color: #5886BF;
+    --primary-color: #298d74;
     --white-color: #FFFFFF;
     --dark-color: #222222;
 }
@@ -94,3 +94,4 @@
     color: var(--dark-color);
     font-size: 40px;
 }
+

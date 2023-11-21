@@ -25,6 +25,9 @@
 
     <!-- ====== title ====== -->
     <title>Vaidy - Physical Therapy</title>
+
+    <!-- ====== Favicon ====== -->
+    <link rel="shortcut icon" href="images/favicon.png">
 </head>
 
 <body>
@@ -32,8 +35,8 @@
 
 
 
-    <!-- ====== Whole Navigation Bar -->
-    <!-- ====== Whole Navigation Bar -->
+    <!-- ====== Whole Navigation Bar ====== -->
+    <!-- ====== Whole Navigation Bar ====== -->
 
     <header class="whole__navbar">
 
@@ -74,10 +77,10 @@
         <div class="nav__bar">
 
             <div class="logo">
-                <img src="images/logo.svg" alt="">
+                <img src="images/logo.png" alt="">
             </div>
 
-            <div class="nav__links">
+            <div class="nav__links" id="nav__links">
 
                 <a href="#" class="link active">
                     Home
@@ -93,10 +96,6 @@
 
                 <a href="#" class="link">
                     Services
-                </a>
-
-                <a href="#" class="link">
-                    Portfolio
                 </a>
 
                 <a href="#" class="link">
@@ -122,6 +121,13 @@
                 <a href="#" class="btn">
                     Appointment
                 </a>
+                
+                <label for="check" class="menu" id="menuToggler">
+                    <input type="checkbox" id="checkTo" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
 
             </div>
 
@@ -479,10 +485,6 @@
                 Your life is waiting–get back to it!
             </p>
 
-            <a href="#" class="btn">
-                Read More
-            </a>
-
         </div>
 
         <div class="choose__card">
@@ -815,7 +817,7 @@
             </span>
 
             <div class="footer__icons">
-                
+
                 <a href="#">
                     <i class="ri-facebook-circle-fill"></i>
                 </a>
@@ -853,6 +855,8 @@
 
 
 
+    <script src="js/script.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
@@ -873,6 +877,21 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
+            breakpoints: {
+                1010: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                650: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                300: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                // Add more breakpoints if needed for other screen sizes
+            }
         });
 
     </script>

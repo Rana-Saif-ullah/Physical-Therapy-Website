@@ -91,8 +91,8 @@
 
 
 
-/* ====== Service Section ====== */
-/* ====== Service Section ====== */
+/* ====== Company Section ====== */
+/* ====== Company Section ====== */
 
 .company__section {
 
@@ -127,6 +127,10 @@
         align-items: center;
         flex-direction: column;
         gap: 16px;
+
+        .title {
+            text-align: center;
+        }
     }
 
     .mySwiperService {
@@ -349,9 +353,11 @@
             font-style: normal;
             color: #222222;
             font-size: 40px;
+            text-align: center;
         }
 
         .paragraph {
+            text-align: center;
             color: #999;
         }
 
@@ -556,30 +562,32 @@
     color: var(--white-color);
     background: var(--dark-color);
 
-    .main__footer{
+    .main__footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: start;
 
+        gap: 30px;
+
         padding: 80px 0;
-    
-        .footer__container{
+
+        .footer__container {
             display: flex;
             flex-direction: column;
             align-items: start;
             gap: 32px;
 
-            .footer__links{
+            .footer__links {
                 display: flex;
                 align-items: start;
                 flex-direction: column;
                 gap: 20px;
-            
-                .link{
+
+                .link {
 
                     /* Layout */
-                    
+
                     display: flex;
                     align-items: center;
                     gap: 6px;
@@ -588,8 +596,8 @@
 
                     font-size: 18px;
                     color: var(--white-color);
-                
-                    >i{
+
+                    >i {
                         font-size: 24px;
                         color: var(--primary-color);
                     }
@@ -614,7 +622,7 @@
             gap: 10px;
 
             >a {
-            
+
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -677,5 +685,174 @@
             0 0 0 30px rgba(255, 255, 255, 0.3), 0 0 0 45px rgba(255, 255, 255, 0);
         box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.3),
             0 0 0 30px rgba(255, 255, 255, 0.3), 0 0 0 45px rgba(255, 255, 255, 0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
+
+    .about__section {
+        flex-direction: column;
+
+        .about__img {
+            height: 400px;
+            width: 100%;
+        }
+
+        .about__content {
+            width: 100%;
+
+            .paragraph {
+                max-width: 100%;
+            }
+
+            .heading {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .choose__section {
+        .choose__card {
+            grid-template-columns: repeat(3, 1fr);
+
+            .card:last-child {
+                grid-column: 1;
+                grid-column-end: 4;
+            }
+        }
+    }
+
+    .team__section {
+        .team__card {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 880px) {
+
+    .hero__section {
+        .swiper {
+            .swiper-slide {
+                .slide__content {
+                    .heading {
+                        font-size: 56px;
+                    }
+                }
+            }
+        }
+    }
+
+    .choose__section {
+        .choose__card {
+            grid-template-columns: repeat(2, 1fr);
+
+            .card:last-child {
+                grid-column: auto;
+                grid-column-end: auto;
+            }
+        }
+    }
+
+    .team__section {
+        .team__card {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .footer__section {
+        .footer__copy {
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 648px) {
+
+    .hero__section {
+        .swiper {
+            .slide__arrow {
+                top: auto;
+                transform: translateY(auto);
+                bottom: 10px;
+            }
+
+            .slide__arrow.arrow__left {
+                left: 6vw;
+            }
+
+            .slide__arrow.arrow__right {
+                right: 6vw;
+            }
+
+            .swiper-slide {
+                .slide__content {
+
+                    .heading {
+                        font-size: 36px;
+                        line-height: 60px;
+                    }
+
+                    .btns {
+                        .btn {
+                            padding: 12px 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .choose__section {
+            .choose__card {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        .team__section {
+            .team__card {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+
+    .choose__section {
+        .choose__card {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .team__section {
+        .team__card {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 }

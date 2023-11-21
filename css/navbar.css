@@ -83,14 +83,68 @@
         justify-content: space-between;
 
         padding: 16px 0;
-        
+
         z-index: 99;
 
         position: sticky;
         top: 0;
-        
+
         .logo img {
-            width: 170px;
+            width: 340px;
+        }
+
+        /* menu icon */
+
+        .menu {
+            display: none;
+            flex-direction: column;
+            width: 34px;
+            align-items: end;
+            cursor: pointer;
+            height: fit-content;
+        }
+
+        .menu span {
+            background: var(--dark-color);
+            border-radius: 10px;
+            height: 3px;
+            margin: 4px 0;
+            transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+        }
+
+        .menu span:nth-of-type(1) {
+            width: 50%;
+        }
+
+        .menu span:nth-of-type(2) {
+            width: 100%;
+        }
+
+        .menu span:nth-of-type(3) {
+            width: 75%;
+
+        }
+
+        .menu input[type="checkbox"] {
+            display: none;
+        }
+
+        .menu input[type="checkbox"]:checked~span:nth-of-type(1) {
+            transform-origin: bottom;
+            transform: rotatez(45deg) translate(-8px, 10px)
+        }
+
+        .menu input[type="checkbox"]:x  ed~span:nth-of-type(2) {
+
+            transform-origin: top;
+            transform: rotatez(-45deg)
+        }
+
+        .menu input[type="checkbox"]:checked~span:nth-of-type(3) {
+            transform-origin: bottom;
+            width: 50%;
+            transform: translate(0px, -8px) rotatez(45deg);
         }
 
         .nav__links {
@@ -119,6 +173,7 @@
 
         .btns {
             display: flex;
+            align-items: center;
             gap: 30px;
 
             .sec__btn {
@@ -195,4 +250,65 @@
 
     }
 
+}
+
+
+@media (max-width: 1362px) {
+
+    .whole__navbar {
+        .nav__bar {
+
+            .nav__links {
+                position: fixed;
+
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                background-color: var(--primary-color);
+                inset: 0;
+
+                display: none;
+
+                .link {
+                    color: var(--white-color);
+                }
+
+                .link:hover,
+                .link.active {
+                    color: var(--white-color);
+                }
+            }
+
+            .active__navLinks {
+                display: flex;
+            }
+
+            .menu {
+                z-index: 999;
+                display: flex;
+            }
+
+
+        }
+    }
+}
+
+
+@media (max-width: 962px) {
+    .whole__navbar {
+        .top__bar {
+            display: none;
+        }
+    }
+}
+
+
+@media (max-width: 648px) {
+    .whole__navbar {
+        .nav__bar {
+            .btns {
+                display: none;
+            }
+        }
+    }
 }
