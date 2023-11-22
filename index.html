@@ -17,7 +17,6 @@
     <!-- ====== Home CSS File ====== -->
     <link rel="stylesheet" href="css/home.css">
 
-
     <!-- ====== Remixicon Cdn Link ====== -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
@@ -245,6 +244,7 @@
     </div>
 
 
+    <!-- <img src="images/companies/client-logo01.png" alt=""> -->
 
 
     <!-- ====== Companies Section ====== -->
@@ -252,18 +252,38 @@
 
     <div class="company__section">
 
-        <img src="images/companies/client-logo01.png" alt="">
+        <div class="swiper mySwiper mySwiperCompany">
 
-        <img src="images/companies/client-logo02.png" alt="">
+            <div class="swiper-wrapper">
 
-        <img src="images/companies/client-logo03.png" alt="">
+                <div class="swiper-slide">
+                    <img src="images/companies/client-logo01.png" alt="">
+                </div>
 
-        <img src="images/companies/client-logo04.png" alt="">
+                <div class="swiper-slide">
+                    <img src="images/companies/client-logo02.png" alt="">
+                </div>
 
-        <img src="images/companies/client-logo05.png" alt="">
+                <div class="swiper-slide">
+                    <img src="images/companies/client-logo03.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/companies/client-logo04.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/companies/client-logo05.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+
+
+
 
     </div>
-
 
 
 
@@ -899,6 +919,16 @@
             }
         });
 
+        var swiperCompany = new Swiper(".mySwiperCompany", {
+            spaceBetween: 30,
+            slidesPerView: 5,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 300,
+                disableOnInteraction: false,
+            }
+        });
     </script>
 
 </body>
