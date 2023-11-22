@@ -373,7 +373,7 @@
         }
     }
 
-    .vision__section{
+    .vision__section {
         grid-template-columns: repeat(2, 1fr);
 
         .card:last-child {
@@ -395,4 +395,24 @@
         }
     }
 
+}
+
+
+
+
+
+
+@media (max-width: 648px) {
+
+    .choose__section {
+        .choose__card {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .team__section {
+        .team__card {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 }
