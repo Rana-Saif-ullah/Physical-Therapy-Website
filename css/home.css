@@ -555,13 +555,6 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
-
-    .footer__section {
-        .footer__copy {
-            flex-direction: column-reverse;
-            gap: 20px;
-        }
-    }
 }
 
 
