@@ -155,7 +155,6 @@
             .single__cards{
                 grid-template-columns: repeat(1, 1fr);
             }
-
             .single__cards .card:last-child{
                 grid-column: auto;
                 grid-column-end: auto;

@@ -1,0 +1,84 @@
+
+
+
+
+/* ====== services Section ====== */
+/* ====== services Section ====== */
+
+.services__section {
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+
+    align-items: center;
+
+    padding: 62px 0;
+
+    .services__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .services__card {
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+        width: 100%;
+        padding: 0 6vw;
+
+        .card {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+
+            overflow: hidden;
+
+            padding-bottom: 30px;
+
+            border-radius: 6px;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+            .services__img {
+                >img {
+                    transition: .3s;
+                    width: 100%;
+                }
+            }
+
+            .card__content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .services__heading {
+                    line-height: 32px;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: var(--dark-color);
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .card:hover {
+            .services__img {
+                >img {
+                    transform: scale(1.05);
+                }
+
+                .social__icon {
+                    .icon {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+    }
+}
