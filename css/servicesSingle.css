@@ -11,18 +11,20 @@
         border-radius: 10px;
         border: 1px solid rgba(0, 0, 0, 0.1);
         min-width: 320px;
-        
+
         display: flex;
         flex-direction: column;
 
         gap: 24px;
 
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow-y: scroll;
+        max-height: 450px;
 
         .title {
             font-size: 24px;
             padding-bottom: 12px;
-            
+
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         }
 
@@ -31,9 +33,38 @@
             flex-direction: column;
             gap: 20px;
 
-            .list{
+            .list {
+
+                /* Layout */
+
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
                 font-size: 18px;
+
+                color: var(--dark-color);
+
+                >img {
+                    width: 60px;
+                    border-radius: 50%;
+                }
+            }
+
+            .text {
+                color: var(--primary-color);
             }
         }
+    }
+
+    .total__services::-webkit-scrollbar{
+        width: 4px;
+    }
+
+    .total__services::-webkit-scrollbar-thumb{
+        background-color: var(--primary-color);
+        cursor: pointer;
+        
+        border-radius: 0 8px 8px 0;
     }
 }
