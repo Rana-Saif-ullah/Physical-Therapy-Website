@@ -335,6 +335,26 @@
         }
     }
 
+    .achievement__section {
+
+        height: 800px;
+
+        .achievement__content {
+            width: 450px;
+
+            .achievement__cards {
+                display: grid;
+                gap: 10px;
+                grid-template-columns: repeat(2, 1fr);
+
+                .card:last-child {
+                    grid-column: 1;
+                    grid-column-end: 3;
+                }
+            }
+        }
+    }
+
     .team__section {
         .team__card {
             grid-template-columns: repeat(2, 1fr);
@@ -366,6 +386,55 @@
     .team__section {
         .team__card {
             grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .about__section {
+        .about__content {
+            .about__list {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+
+    .vision__section {
+        grid-template-columns: repeat(1, 1fr);
+
+        .card:last-child {
+            grid-column: auto;
+            grid-column-end: auto;
+        }
+    }
+}
+
+
+
+
+
+
+@media (max-width:514px) {
+
+    .achievement__section {
+
+        height: 900px;
+
+        .achievement__content {
+            width: 320px;
+            padding: 20px;
+
+            right: 50%;
+            transform: translate(50%, -50%);
+
+            .achievement__cards {
+                display: grid;
+                gap: 10px;
+                grid-template-columns: repeat(1, 1fr);
+
+                .card:last-child {
+                    grid-column: auto;
+                    grid-column-end: auto;
+                }
+            }
         }
     }
 }
