@@ -135,6 +135,7 @@
 
     .mySwiperService {
         margin-top: 36px;
+        padding: 30px 0;
 
         .swiper-pagination {
             bottom: 0px;
