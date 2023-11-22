@@ -54,7 +54,7 @@
             .card__content {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                gap: 6px;
 
                 .services__heading {
                     line-height: 32px;
@@ -62,6 +62,17 @@
                     font-style: normal;
                     color: var(--dark-color);
                     font-size: 22px;
+                }
+
+                .text{
+                    font-weight: 400;
+                    color: #666;
+                    max-width: 340px;
+                }
+
+                .text:last-child{
+                    font-weight: 600;
+                    color: var(--primary-color);
                 }
             }
         }
