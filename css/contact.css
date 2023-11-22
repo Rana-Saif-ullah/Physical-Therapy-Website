@@ -1,0 +1,136 @@
+.contact__form {
+    padding: 60px 6vw;
+    display: grid;
+
+    gap: 32px;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    .input {
+        padding: 14px;
+        border-radius: 4px;
+        outline: none;
+
+        border: 1px solid rgba(0, 0, 0, 0.1);
+
+        font-size: 16px;
+    }
+
+    .input::placeholder {
+        font-size: 16px;
+        color: var(--dark-color);
+    }
+
+    .text__area {
+        outline: none;
+        border-radius: 4px;
+        grid-column: 1;
+        grid-column-end: 3;
+
+        height: 240px;
+
+        resize: none;
+    }
+
+    .btn {
+        text-align: center;
+        grid-column: 1;
+        grid-column-end: 3;
+    }
+}
+
+.contact__detail {
+    display: flex;
+    align-items: center;
+
+    padding: 30px 6vw;
+
+    .hospital__detail {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 64px;
+
+        width: 100%;
+
+        .detail__container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .detail__list {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                .list {
+                    font-size: 18px;
+                    color: #666;
+
+                    cursor: pointer;
+
+                    transition: .3s color;
+                }
+
+                .list:hover {
+                    color: var(--primary-color);
+                }
+            }
+        }
+
+        .detail__container:first-child {
+            grid-row: 1;
+            grid-row-end: 3;
+        }
+
+        .detail__container:last-child {
+            .detail__list {
+                flex-direction: row;
+
+                >i {
+                    font-size: 24px;
+                    color: #666;
+
+                    cursor: pointer;
+
+                    transition: .3s color;
+                }
+
+                >i:hover {
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+
+    .hospital__map {
+        height: 500px;
+        width: 100%;
+
+        border: 0;
+        border-radius: 10px;
+    }
+
+}
+
+@media (max-width:1200px) {
+
+    .contact__detail {
+        gap: 64px;
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media (max-width:638px) {
+
+    .contact__form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact__detail {
+        .hospital__detail {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

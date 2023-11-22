@@ -13,6 +13,9 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 99;
 
+    position: sticky;
+    top: 0;
+
     .top__bar {
 
         /* Layout */
@@ -87,9 +90,6 @@
     padding: 16px 0;
 
     z-index: 99;
-
-    position: sticky;
-    top: 0;
 
     .logo img {
         width: 340px;
@@ -304,10 +304,11 @@
             display: none;
         }
 
-        .nav__bar{
-            .btns{
+        .nav__bar {
+            .btns {
+
                 .sec__btn,
-                .btn{
+                .btn {
                     display: none;
                 }
             }
@@ -321,7 +322,7 @@
 @media (max-width: 648px) {
     .whole__navbar {
         .nav__bar {
-            .logo img{
+            .logo img {
                 width: 260px;
             }
         }
