@@ -25,6 +25,11 @@
     }
 }
 
+.payment__title {
+    padding: 32px 6vw 0;
+    text-align: center;
+}
+
 .detail__booking {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -44,6 +49,14 @@
     }
 }
 
+.radio__btns {
+    padding: 60px 6vw 0px 6vw;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .contact__form {
     padding: 60px 6vw;
     display: grid;
@@ -52,20 +65,24 @@
 
     grid-template-columns: repeat(2, 1fr);
 
+    .input__field {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .input {
         padding: 14px;
         border-radius: 4px;
         outline: none;
+
+        background-color: #fff;
 
         border: 1px solid rgba(0, 0, 0, 0.1);
 
         font-size: 16px;
     }
 
-    .input:nth-child(7) {
-        grid-column: 1;
-        grid-column-end: 3;
-    }
 
     .input::placeholder {
         font-size: 16px;
@@ -83,6 +100,14 @@
         resize: none;
     }
 
+    .payment__form {
+        grid-column: 1;
+        grid-column-end: 3;
+
+        padding: 0;
+
+        display: none;
+    }
 
     .btn {
         text-align: center;
@@ -96,5 +121,16 @@
         width: 100%;
 
         color: var(--white-color);
+    }
+
+    .heading {
+        display: none;
+    }
+}
+
+@media (max-width:600px) {
+    .contact__form {
+        display: flex;
+        flex-direction: column;
     }
 }
