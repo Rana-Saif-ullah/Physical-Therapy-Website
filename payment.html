@@ -82,7 +82,7 @@
 
             <div class="nav__links" id="nav__links">
 
-                <a href="index.html" class="link active">
+                <a href="index.html" class="link">
                     Home
                 </a>
 
@@ -118,7 +118,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="btn">
+                <a href="payment.html" class="btn">
                     Appointment
                 </a>
 
@@ -475,9 +475,9 @@
             const radioButtons = document.querySelectorAll('.paymentMethod');
             const paymentForm = document.querySelector('.contact__form.payment__form');
             const cardDetailHeading = document.querySelector('.heading');
-    
+
             radioButtons.forEach(radioButton => {
-                radioButton.addEventListener('change', function() {
+                radioButton.addEventListener('change', function () {
                     if (radioButton.id === 'COD' && radioButton.checked) {
                         paymentForm.style.display = 'none';
                         cardDetailHeading.style.display = 'none';
@@ -489,7 +489,7 @@
             });
         });
     </script>
-    
+
 
 
 
